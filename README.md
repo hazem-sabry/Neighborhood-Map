@@ -3,7 +3,7 @@ Using Google maps API and usage of Geocode to create a simple Map with A good UI
 
 ## How to run the project:
 
-* Clone the repository from here [Neighborhood Map](https://github.com/zoma75/Neighborhood-Map.git).
+* Clone the repository.
 * Or Download the project as `.Zip` file.
 * Open `index.html` in the browser.
 

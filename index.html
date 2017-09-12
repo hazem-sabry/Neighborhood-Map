@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Hazem Muhamed Sabry">
+  <title>My Udacity Map Project</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+</head>
+<body>
+    <!--Start Search Area -->
+    <aside class="search-section">
+        <div id="search">
+          <h1>Locations <i class="fa fa-map-marker" aria-hidden="true"></i></h1>
+          <h3>Filter your Location: <i class="fa fa-hand-o-down" aria-hidden="true"></i></h3>
+          <input data-bind="textInput: searchStr" type="text">
+          <ul data-bind="foreach: computedArray">
+            <li data-bind="text: title, click: $root.showInfoWindowData"></li>
+          </ul>
+        </div>
+    </aside>
+    <!-- End Search Area -->
+
+    <!-- Start Map Area -->
+    <main class="map-section">
+        <div id="map" class="map"></div>
+    </main>
+
+    <!-- End Map Area -->
+	
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/knockout-3.4.2.js"></script>
+    <script src="js/app.js"></script>
+    <!-- load google maps with jquery to use fail catch method -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9eypmrkffrN8mEQ356c1BJv_NaMX9l0w&v3&callback=initMap" onerror="LoadError()"></script>
+
+</body>
+</html>
